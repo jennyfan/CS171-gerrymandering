@@ -4,7 +4,7 @@ year = 1974
 congNum = 93
 with open('2014.csv', 'r') as fin:
     reader = csv.reader(fin, delimiter='\t')
-    with open('gapdata.csv', 'w') as fout:
+    with open('gapData.csv', 'w') as fout:
         next(reader)
         writer = csv.writer(fout, delimiter=',')
         # writer.writerow(next(reader) + ['Year'])
